@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 300" fill="none">
+  <defs>
+    <linearGradient id="metal" x1="65" y1="45" x2="290" y2="260" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#fff"/><stop offset=".38" stop-color="#d9dadd"/><stop offset=".68" stop-color="#fff"/><stop offset="1" stop-color="#8b8e94"/>
+    </linearGradient>
+    <linearGradient id="crown" x1="158" y1="12" x2="208" y2="52" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#fff"/><stop offset="1" stop-color="#aeb2b9"/>
+    </linearGradient>
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <g filter="url(#softGlow)">
+    <!-- Small crown above the monogram -->
+    <path d="m150 34 12 11 14-24 14 24 13-11-5 25h-44z" fill="url(#crown)"/>
+    <path d="M153 62h52l-5 10h-42z" fill="#e8e9eb"/>
+    <!-- Geometric C -->
+    <path d="M166 77H111L66 101 39 145v59l40 34h61l35-28v-42l-42 21H96l-18-16v-37l20-29 29-14h34l19 13 18-34z" fill="url(#metal)"/>
+    <path d="m128 118 29 0 18 13-15 29-23-10-19 12v27l19 11 24-12 7 37-34 20-54-10-24-38 3-61 37-42z" fill="#08090b"/>
+    <!-- Geometric P, sharing the center stem with the C -->
+    <path d="M169 78h88l43 34v55l-40 35h-43v72h-48z" fill="url(#metal)"/>
+    <path d="M213 119h35l17 14v24l-18 15h-34z" fill="#090a0c"/>
+    <path d="M169 78h39v196h-39z" fill="url(#metal)"/>
+    <!-- Faceted lower point -->
+    <path d="m168 231 22 14 20-14-10 54-11 13-11-13z" fill="#aeb2b9" opacity=".92"/>
+    <!-- Orbit ring -->
+    <path d="M61 123c-36 23-49 48-34 65 18 22 68 20 128-5" stroke="#fff" stroke-width="5.2" stroke-linecap="round"/>
+    <path d="M299 123c36 23 49 48 34 65-18 22-68 20-128-5" stroke="#fff" stroke-width="5.2" stroke-linecap="round"/>
+    <path d="M60 123c33-26 80-37 121-29" stroke="#bfc2c8" stroke-width="2.4" stroke-linecap="round" opacity=".72"/>
+  </g>
+</svg>
